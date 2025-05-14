@@ -21,12 +21,12 @@ A modern, responsive React + TypeScript dashboard that displays a list of users 
 
 ```bash
 git clone https://github.com/ezeugwadavid/auto-chek.git
-cd user-dashboard
 ```
 
 2. **Install the project dependencies:**
 
 ```bash
+cd user-dashboard
 npm install
 ```
 
