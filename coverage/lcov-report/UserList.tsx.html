@@ -126,7 +126,29 @@
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -161,13 +183,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -182,21 +214,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import UserDetail from './UserDetail';
-import type { UserListProps } from '../interfaces/User';
-import styled from 'styled-components';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import UserDetail from "./UserDetail";
+import type { UserListProps } from "../interfaces/User";
+import styled from "styled-components";
 &nbsp;
 const Container = styled.div`
   padding: 1rem;
-  h5{
+  h5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,43 +267,65 @@ const Button = styled.button`
   margin: 0 5px;
 `;
 &nbsp;
-const UserList: React.FC&lt;UserListProps&gt; = ({ users, isLoading, isError, handleToggle, expandedUserId, setCurrentPage, currentPage }) =&gt; {
+const UserList: React.FC&lt;UserListProps&gt; = ({
+  users,
+  isLoading,
+  isError,
+  handleToggle,
+  expandedUserId,
+  setCurrentPage,
+  currentPage,
+}) =&gt; {
   if (isLoading) return &lt;p&gt;Loading...&lt;/p&gt;;
   if (isError) return &lt;p&gt;Error loading users.&lt;/p&gt;;
 &nbsp;
   return (
     &lt;Container&gt;
-      {users.length !== 0 ? users.map(user =&gt; (
-        &lt;UserCard key={user.id}&gt;
-          &lt;div&gt;
-            &lt;strong&gt;{user.name}&lt;/strong&gt;
-            &lt;Button onClick={() =&gt; handleToggle(user.id)} aria-expanded={expandedUserId === user.id}&gt;
-              {expandedUserId === user.id ? <span class="branch-0 cbranch-no" title="branch not covered" >'Hide Details' </span>: 'Show Details'}
-            &lt;/Button&gt;
-          &lt;/div&gt;
-          {expandedUserId === user.id &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;UserDetail user={user} /&gt;}</span>
-        &lt;/UserCard&gt;
-   
-      ))
-      :
-<span class="branch-1 cbranch-no" title="branch not covered" >      &lt;h5&gt;No users found.&lt;/h5&gt;</span>
-    }
+      {users.length !== 0 ? (
+        users.map((user) =&gt; (
+          &lt;UserCard key={user.id}&gt;
+            &lt;div&gt;
+              &lt;strong&gt;{user.name}&lt;/strong&gt;
+              &lt;Button
+                onClick={() =&gt; handleToggle(user.id)}
+                aria-expanded={expandedUserId === user.id}
+              &gt;
+                {expandedUserId === user.id ? <span class="branch-0 cbranch-no" title="branch not covered" >"Hide Details" </span>: "Show Details"}
+              &lt;/Button&gt;
+            &lt;/div&gt;
+            {expandedUserId === user.id &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;UserDetail user={user} /&gt;}</span>
+          &lt;/UserCard&gt;
+        ))
+      ) : (
+<span class="branch-1 cbranch-no" title="branch not covered" >        &lt;h5&gt;No users found.&lt;/h5&gt;</span>
+      )}
       &lt;Pagination&gt;
-        &lt;Button disabled={currentPage === 1} onClick={<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >setCurrentPage(Math.max(currentPage - 1, 1))}</span>&gt;Previous&lt;/Button&gt;
-        &lt;Button disabled={users.length &lt; 5}  onClick={<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >setCurrentPage(currentPage + 1)}</span>&gt;Next&lt;/Button&gt;
+        &lt;Button
+          disabled={currentPage === 1}
+          onClick={<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >setCurrentPage(Math.max(currentPage - 1, 1))}</span>
+        &gt;
+          Previous
+        &lt;/Button&gt;
+        &lt;Button
+          disabled={users.length &lt; 5}
+          onClick={<span class="fstat-no" title="function not covered" >() =</span>&gt; <span class="cstat-no" title="statement not covered" >setCurrentPage(currentPage + 1)}</span>
+        &gt;
+          Next
+        &lt;/Button&gt;
       &lt;/Pagination&gt;
     &lt;/Container&gt;
   );
 };
 &nbsp;
-export default UserList;</pre></td></tr></table></pre>
+export default UserList;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-14T10:55:29.808Z
+                at 2025-05-14T11:15:39.235Z
             </div>
         <script src="prettify.js"></script>
         <script>
