@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747221339254" clover="3.2.0">
-  <project timestamp="1747221339254" name="All files">
+<coverage generated="1747221804526" clover="3.2.0">
+  <project timestamp="1747221804526" name="All files">
     <metrics statements="28" coveredstatements="26" conditionals="8" coveredconditionals="5" methods="10" coveredmethods="8" elements="46" coveredelements="39" complexity="0" loc="28" ncloc="28" packages="1" files="3" classes="3"/>
     <file name="SearchBar.tsx" path="/Users/ezeugwadavid/Documents/test-projects/auto-chek-test/user-dashboard/src/components/SearchBar.tsx">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
